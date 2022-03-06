@@ -1,5 +1,3 @@
-<!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,28 +13,63 @@
 
     <main>
 
-        <h2 class="title">Caminhos</h2>
+        <h2 class="title">Projetos</h2>
 
-        <section id="routes">
+        <section id="projects">
 
-            <a href="./links">
-                <section class="route">
-                    <h3 class="title">Links</h3>
-                    <p>Link de algumas coisas minhas.</p>
+            <a href="https://pomodoro-wd.vercel.app" target="blank">
+                <section class="project">
+                    <h3 class="title">Pomodoro</h3>
+                    <p>Timer pomodoro para auxiliar no foco contínuo.</p>
                 </section>
             </a>
-
-            <a href="./games">
-                <section class="route">
-                    <h3 class="title">Games</h3>
-                    <p>Alguns games para passar o tempo.</p>
-                </section>
-            </a>
-
 
         </section>
 
+        <h2 class="title">Redes</h2>
+
+        <section id="networks"></section>
+
     </main>
+
+    <script>
+        
+        const networksEl = document.querySelector('#networks')
+
+        function createNetwork({href, name}){
+            const element = document.createElement('a')
+            element.href = href
+            element.target = 'blank'
+            element.innerHTML = `
+            <section class="network">
+                <h3 class="name">${name}</h3>
+            </section>
+            `
+            return element
+        }
+
+        function appendInNetworksEl(network){
+            networksEl.appendChild(createNetwork(network))
+        }
+
+        const networks = [
+            {
+                name:'GitHub',
+                href:'https://github.com/wellingtomdev',
+            },
+            {
+                name:'Instagram',
+                href:'https://www.instagram.com/wellingtomdev/',
+            },
+            {
+                name:'Linkedin',
+                href:'https://www.linkedin.com/in/wellington-mesquita-6b9a0920a',
+            },
+        ]
+
+        networks.map(appendInNetworksEl)
+
+    </script>
 
 
 </body>
