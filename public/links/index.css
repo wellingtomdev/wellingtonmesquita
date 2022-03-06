@@ -1,0 +1,43 @@
+.title{
+    margin-bottom: 10px;
+}
+
+#projects{
+    margin: 20px 0;
+}
+
+#projects .project{
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: solid 1px var(--dark-white);
+}
+
+#projects .project:hover{
+    background-color: var(--dark-white);
+    border: solid 1px var(--grey);
+}
+
+#networks{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#networks .network{
+    display: flex;
+    justify-content: center;
+    border: solid 1px var(--dark-white);
+    margin: 10px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+#networks .network:hover{
+    background-color: var(--dark-white);
+    border: solid 1px var(--grey);
+}
+
+#networks .network h3{
+    display: flex;
+    align-items: center;
+}

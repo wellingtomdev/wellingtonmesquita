@@ -1,0 +1,19 @@
+.title{
+    margin-bottom: 10px;
+}
+
+#routes{
+    margin: 10px 0;
+}
+
+#routes .route{
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: solid 1px var(--dark-white);
+    margin: 10px 0;
+}
+
+#routes .route:hover{
+    background-color: var(--dark-white);
+    border: solid 1px var(--grey);
+}
